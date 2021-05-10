@@ -1,0 +1,21 @@
+{
+  "name": "complex-heart/contracts",
+  "description": "Common interfaces for PHP Complex Heart SDK.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Unay Santisteban",
+      "email": "usantisteban@othercode.es"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.4|^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ComplexHeart\\Contracts\\": "src/"
+    }
+  }
+}
