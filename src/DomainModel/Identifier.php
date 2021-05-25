@@ -22,15 +22,6 @@ interface Identifier
     public function value(): string;
 
     /**
-     * Check if the given identifier is the same than the current one.
-     *
-     * @param  Identifier  $other
-     *
-     * @return bool
-     */
-    public function is(Identifier $other): bool;
-
-    /**
      * Represents the id as string.
      *
      * @return string
