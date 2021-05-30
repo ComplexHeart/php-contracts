@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Contracts\DomainModel;
+namespace ComplexHeart\Contracts\Domain\Model;
 
-use ComplexHeart\Contracts\ServiceBus\EventBus;
+use ComplexHeart\Contracts\Domain\ServiceBus\EventBus;
 
 /**
  * Interface Aggregate
  *
  * @author Unay Santisteban <usantisteban@othercode.es>
- * @package ComplexHeart\Contracts\DomainModel
+ * @package ComplexHeart\Contracts\Domain\Model
  */
 interface Aggregate extends Entity
 {

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Contracts\DomainModel;
+namespace ComplexHeart\Contracts\Domain\Model;
 
 /**
  * Interface Entity
  *
  * @author Unay Santisteban <usantisteban@othercode.es>
- * @package ComplexHeart\Contracts\DomainModel
+ * @package ComplexHeart\Contracts\Domain\Model
  */
 interface Entity
 {
