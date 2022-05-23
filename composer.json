@@ -2,7 +2,7 @@
   "name": "complex-heart/contracts",
   "description": "Common interfaces for PHP Complex Heart SDK.",
   "type": "library",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "authors": [
     {
       "name": "Unay Santisteban",
