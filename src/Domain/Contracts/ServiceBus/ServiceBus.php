@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Contracts\Domain\ServiceBus;
+namespace ComplexHeart\Domain\Contracts\ServiceBus;
 
 /**
  * Interface ServiceBus
  *
  * @author Unay Santisteban <usantisteban@othercode.es>
- * @package ComplexHeart\Contracts\Domain\ServiceBus
+ * @package ComplexHeart\Domain\Contracts\ServiceBus
  */
 interface ServiceBus
 {

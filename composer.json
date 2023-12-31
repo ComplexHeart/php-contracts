@@ -6,16 +6,16 @@
   "authors": [
     {
       "name": "Unay Santisteban",
-      "email": "usantisteban@othercode.es"
+      "email": "usantisteban@othercode.io"
     }
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": "^7.4|^8.0"
+    "php": "^8.1"
   },
   "autoload": {
     "psr-4": {
-      "ComplexHeart\\Contracts\\": "src/"
+      "ComplexHeart\\": "src/"
     }
   }
 }
