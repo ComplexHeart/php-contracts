@@ -15,7 +15,7 @@ interface ValueObject
     /**
      * Return the attribute values.
      *
-     * @return array
+     * @return array<string, mixed>
      */
     public function values(): array;
 

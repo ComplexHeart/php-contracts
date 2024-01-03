@@ -1,0 +1,45 @@
+name: Test
+
+on:
+  push:
+    branches: [ 'main' ]
+  pull_request:
+    types: [ 'opened', 'synchronize', 'reopened' ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        php-version: [ '8.1', '8.2', '8.3' ]
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up PHP ${{ matrix.php-version }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          coverage: xdebug
+          tools: composer:v2
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.composer/cache
+          key: php-${{ matrix.php-version }}-composer-${{ hashFiles('**/composer.json') }}
+          restore-keys: php-${{ matrix.php-version }}-composer-
+
+      - name: Validate composer.json and composer.lock
+        run: composer validate
+
+      - name: Install dependencies
+        if: steps.composer-cache.outputs.cache-hit != 'true'
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - name: Execute Static Code analysis
+        run: composer analyse
