@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Domain\Contracts\ServiceBus;
+namespace ComplexHeart\Domain\Events;
 
 /**
  * Interface Event
  *
- * @author Unay Santisteban <usantisteban@othercode.es>
- * @package ComplexHeart\Domain\Contracts\ServiceBus
+ * Represents a domain event - something that happened in the domain.
+ *
+ * @author Unay Santisteban <usantisteban@othercode.io>
+ * @package ComplexHeart\Domain\Events
  */
 interface Event
 {
@@ -22,18 +24,11 @@ interface Event
     /**
      * The unique domain event name, commonly is a dotted string.
      *
-     * i.e: this.object.event.name
+     * Examples: order.placed, user.registered, payment.processed
      *
      * @return string
      */
     public function eventName(): string;
-
-    /**
-     * The aggregate id that has registered the domain event (UUID).
-     *
-     * @return string
-     */
-    public function aggregateId(): string;
 
     /**
      * Returns the event payload.
@@ -43,9 +38,9 @@ interface Event
     public function payload(): array;
 
     /**
-     * The timestamp on when the domain event is registered in ISO-8601.
+     * The timestamp when the domain event occurred in ISO-8601.
      *
-     * i.e: 2005-08-15T15:52:01+0000
+     * Example: 2005-08-15T15:52:01+0000
      *
      * @return string
      */

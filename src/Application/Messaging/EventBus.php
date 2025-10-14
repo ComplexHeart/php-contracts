@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Domain\Contracts\ServiceBus;
+namespace ComplexHeart\Application\Messaging;
+
+use ComplexHeart\Domain\Events\Event;
 
 /**
  * Interface EventBus
  *
- * @author Unay Santisteban <usantisteban@othercode.es>
- * @package ComplexHeart\Domain\Contracts\ServiceBus
+ * @author Unay Santisteban <usantisteban@othercode.io>
+ * @package ComplexHeart\Application\Messaging
  */
 interface EventBus
 {
