@@ -11,16 +11,16 @@ arch('Application layer can depend on Domain layer')
     ->toUse('ComplexHeart\Domain');
 
 arch('Domain Model interfaces are correctly placed')
-    ->expect('ComplexHeart\Domain\Model')
+    ->expect('ComplexHeart\Domain\Contracts\Model')
     ->toBeInterfaces()
     ->toOnlyBeUsedIn([
-        'ComplexHeart\Domain\Model',
-        'ComplexHeart\Domain\Events',
+        'ComplexHeart\Domain\Contracts\Model',
+        'ComplexHeart\Domain\Contracts\Events',
         'ComplexHeart\Application',
     ]);
 
 arch('Domain Event interfaces are correctly placed')
-    ->expect('ComplexHeart\Domain\Events')
+    ->expect('ComplexHeart\Domain\Contracts\Events')
     ->toBeInterfaces()
     ->toOnlyBeUsedIn([
         'ComplexHeart\Domain',
@@ -53,7 +53,7 @@ arch('Application Messaging interfaces are correctly placed')
     ->toBeInterfaces()
     ->toOnlyBeUsedIn([
         'ComplexHeart\Application',
-        'ComplexHeart\Domain\Model', // Aggregate uses EventBus
+        'ComplexHeart\Domain\Contracts\Model', // Aggregate uses EventBus
     ]);
 
 arch('all interfaces are suffixed correctly')

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Application;
+namespace ComplexHeart\Application\Contracts;
 
-use ComplexHeart\Application\Command\CommandBus;
-use ComplexHeart\Application\Query\QueryBus;
-use ComplexHeart\Domain\Events\EventBus;
+use ComplexHeart\Application\Contracts\Command\CommandBus;
+use ComplexHeart\Application\Contracts\Query\QueryBus;
+use ComplexHeart\Domain\Contracts\Events\EventBus;
 
 /**
  * Interface ServiceBus

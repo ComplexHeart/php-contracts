@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Application\Handler;
+namespace ComplexHeart\Application\Contracts\Handler;
 
-use ComplexHeart\Application\Query\Query;
-use ComplexHeart\Application\Query\QueryResponse;
+use ComplexHeart\Application\Contracts\Query\Query;
+use ComplexHeart\Application\Contracts\Query\QueryResponse;
 
 /**
  * Interface QueryHandler

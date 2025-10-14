@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Domain\Model;
+namespace ComplexHeart\Domain\Contracts\Model;
 
-use ComplexHeart\Domain\Events\EventBus;
+use ComplexHeart\Domain\Contracts\Events\EventBus;
 
 /**
  * Interface Aggregate

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Application\Command;
+namespace ComplexHeart\Application\Contracts\Command;
 
 /**
  * Interface Command

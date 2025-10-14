@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Application\Query;
+namespace ComplexHeart\Application\Contracts\Query;
 
 /**
  * Interface Query
