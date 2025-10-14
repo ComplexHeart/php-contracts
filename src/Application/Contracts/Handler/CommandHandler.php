@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Application\Handler;
+namespace ComplexHeart\Application\Contracts\Handler;
 
-use ComplexHeart\Application\Command\Command;
+use ComplexHeart\Application\Contracts\Command\Command;
 
 /**
  * Interface CommandHandler

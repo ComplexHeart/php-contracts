@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Domain\Events;
+namespace ComplexHeart\Domain\Contracts\Events;
 
 /**
  * Interface Traceable

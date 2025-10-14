@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Domain\Model;
+namespace ComplexHeart\Domain\Contracts\Model;
 
 /**
  * Interface Entity

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Application\Handler;
+namespace ComplexHeart\Application\Contracts\Handler;
 
-use ComplexHeart\Domain\Events\Event;
+use ComplexHeart\Domain\Contracts\Events\Event;
 
 /**
  * Interface EventHandler
