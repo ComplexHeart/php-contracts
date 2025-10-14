@@ -2,15 +2,14 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Domain\Contracts\Model;
+namespace ComplexHeart\Domain\Model;
 
-use ComplexHeart\Domain\Contracts\ServiceBus\EventBus;
+use ComplexHeart\Domain\Events\EventBus;
 
 /**
  * Interface Aggregate
  *
- * @author Unay Santisteban <usantisteban@othercode.es>
- * @package ComplexHeart\Domain\Contracts\Model
+ * @author Unay Santisteban <usantisteban@othercode.io>
  */
 interface Aggregate extends Entity
 {
@@ -20,9 +19,6 @@ interface Aggregate extends Entity
      *  $aggregate = new Aggregate();
      *  // do things and generate events
      *  $aggregate->publishDomainEvents($eventBus);
-     *
-     * @param  EventBus  $eventBus
-     * @return void
      */
     public function publishDomainEvents(EventBus $eventBus): void;
 }

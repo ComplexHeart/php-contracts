@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Domain\Contracts\Model;
+namespace ComplexHeart\Domain\Model;
 
 /**
  * Interface ValueObject
  *
- * @author Unay Santisteban <usantisteban@othercode.es>
- * @package ComplexHeart\Domain\Contracts\Model
+ * @author Unay Santisteban <usantisteban@othercode.io>
  */
 interface ValueObject
 {
@@ -21,10 +20,6 @@ interface ValueObject
 
     /**
      * Compare $this object with $other object.
-     *
-     * @param  object  $other
-     *
-     * @return bool
      */
     public function equals(object $other): bool;
 }

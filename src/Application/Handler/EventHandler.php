@@ -2,20 +2,19 @@
 
 declare(strict_types=1);
 
-namespace ComplexHeart\Domain\Contracts\ServiceBus;
+namespace ComplexHeart\Application\Handler;
+
+use ComplexHeart\Domain\Events\Event;
 
 /**
  * Interface EventHandler
  *
- * @author Unay Santisteban <usantisteban@othercode.es>
- * @package ComplexHeart\Domain\Contracts\ServiceBus
+ * @author Unay Santisteban <usantisteban@othercode.io>
  */
 interface EventHandler
 {
     /**
      * Handle the event execution.
-     *
-     * @param  Event  $event
      */
     public function __invoke(Event $event): void;
 }
