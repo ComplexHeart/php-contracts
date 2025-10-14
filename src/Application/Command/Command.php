@@ -11,7 +11,6 @@ namespace ComplexHeart\Application\Command;
  * Commands represent the intention to change the system state.
  *
  * @author Unay Santisteban <usantisteban@othercode.io>
- * @package ComplexHeart\Application\Command
  */
 interface Command
 {

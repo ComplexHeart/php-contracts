@@ -20,7 +20,6 @@ namespace ComplexHeart\Domain\Events;
  * - Event store stream organization
  *
  * @author Unay Santisteban <usantisteban@othercode.io>
- * @package ComplexHeart\Domain\Events
  */
 interface Sourceable
 {

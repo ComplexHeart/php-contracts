@@ -8,7 +8,6 @@ namespace ComplexHeart\Domain\Model;
  * Interface ValueObject
  *
  * @author Unay Santisteban <usantisteban@othercode.io>
- * @package ComplexHeart\Domain\Model
  */
 interface ValueObject
 {
@@ -21,10 +20,6 @@ interface ValueObject
 
     /**
      * Compare $this object with $other object.
-     *
-     * @param  object  $other
-     *
-     * @return bool
      */
     public function equals(object $other): bool;
 }

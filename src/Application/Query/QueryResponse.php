@@ -11,7 +11,6 @@ namespace ComplexHeart\Application\Query;
  * Represents the data returned from a query execution.
  *
  * @author Unay Santisteban <usantisteban@othercode.io>
- * @package ComplexHeart\Application\Query
  */
 interface QueryResponse
 {

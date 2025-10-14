@@ -17,7 +17,6 @@ namespace ComplexHeart\Domain\Events;
  * - APM tool integration (Datadog, New Relic, Zipkin)
  *
  * @author Unay Santisteban <usantisteban@othercode.io>
- * @package ComplexHeart\Domain\Events
  */
 interface Traceable
 {

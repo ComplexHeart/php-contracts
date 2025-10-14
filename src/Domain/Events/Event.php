@@ -10,14 +10,11 @@ namespace ComplexHeart\Domain\Events;
  * Represents a domain event - something that happened in the domain.
  *
  * @author Unay Santisteban <usantisteban@othercode.io>
- * @package ComplexHeart\Domain\Events
  */
 interface Event
 {
     /**
      * The unique id for the current domain event (UUID).
-     *
-     * @return string
      */
     public function eventId(): string;
 
@@ -25,8 +22,6 @@ interface Event
      * The unique domain event name, commonly is a dotted string.
      *
      * Examples: order.placed, user.registered, payment.processed
-     *
-     * @return string
      */
     public function eventName(): string;
 
@@ -41,8 +36,6 @@ interface Event
      * The timestamp when the domain event occurred in ISO-8601.
      *
      * Example: 2005-08-15T15:52:01+0000
-     *
-     * @return string
      */
     public function occurredOn(): string;
 }

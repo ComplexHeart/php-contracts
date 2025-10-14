@@ -11,7 +11,6 @@ namespace ComplexHeart\Application\Query;
  * Queries represent the intention to read data without side effects.
  *
  * @author Unay Santisteban <usantisteban@othercode.io>
- * @package ComplexHeart\Application\Query
  */
 interface Query
 {
